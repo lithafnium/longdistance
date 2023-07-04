@@ -8,7 +8,7 @@ import {
   Hamburger,
 } from "./styles";
 import Feature from "@app/pages/home/components/feature/feature";
-import { apiGet } from "@app/utils/api";
+import Calendar from "@app/pages/home/components/calendar/calendar";
 
 const Home = () => {
   const [features, setFeatures] = useState<string[]>([]);
@@ -37,21 +37,13 @@ const Home = () => {
       </Sidebar>
       <Container>
         <ContainerInner>
-          <Button
-            style={{ width: "100px" }}
-            backgroundColor={colors[2]}
-            color="white"
-            borderRadius="50px"
-            padding="10px 10px"
-          >
-            New Date
-          </Button>
+          <Calendar />
           <h2>Upcoming Dates</h2>
           <p>
             No upcoming dates! Create a date with your partner to have them show
             here
           </p>
-          <h2>Completed Dates</h2>
+          <h2>Pending Dates</h2>
           <div>
             <Input
               placeholder="Add new date attributes!"

@@ -4,8 +4,8 @@ import { colors, fonts } from "@app/styles/styles";
 
 export const Container = styled.div`
   width: 100%;
-  // width: calc(100% - 80px);
-  // margin-left: 80px;
+  width: calc(100% - 80px);
+  margin-left: 80px;
   display: flex;
   justify-content: center;
   margin-top: 64px;
